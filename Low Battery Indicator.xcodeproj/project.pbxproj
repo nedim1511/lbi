@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		459E14AD214BAF6900F53B6B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14AC214BAF6900F53B6B /* RoundedButton.swift */; };
+		459E14AF214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */; };
 		45C38A402149544300664577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A3F2149544300664577 /* AppDelegate.swift */; };
-		45C38A422149544300664577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A412149544300664577 /* ViewController.swift */; };
+		45C38A422149544300664577 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A412149544300664577 /* Intro.swift */; };
 		45C38A452149544300664577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C38A432149544300664577 /* Main.storyboard */; };
 		45C38A472149544500664577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C38A462149544500664577 /* Assets.xcassets */; };
 		45C38A4A2149544500664577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C38A482149544500664577 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		459E14AC214BAF6900F53B6B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		45C38A3C2149544300664577 /* Low Battery Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Low Battery Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C38A3F2149544300664577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45C38A412149544300664577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45C38A412149544300664577 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		45C38A442149544300664577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45C38A462149544500664577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C38A492149544500664577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459E14A7214BAB4800F53B6B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45C38A412149544300664577 /* Intro.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		459E14A9214BAB5D00F53B6B /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				45C38A3F2149544300664577 /* AppDelegate.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		459E14AA214BAB6B00F53B6B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				459E14B0214BAFBA00F53B6B /* Fonts */,
+				45C38A462149544500664577 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		459E14AB214BAF5000F53B6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				459E14AC214BAF6900F53B6B /* RoundedButton.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		459E14B0214BAFBA00F53B6B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		45C38A332149544300664577 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +99,13 @@
 		45C38A3E2149544300664577 /* Low Battery Indicator */ = {
 			isa = PBXGroup;
 			children = (
-				45C38A3F2149544300664577 /* AppDelegate.swift */,
-				45C38A412149544300664577 /* ViewController.swift */,
-				45C38A432149544300664577 /* Main.storyboard */,
-				45C38A462149544500664577 /* Assets.xcassets */,
-				45C38A482149544500664577 /* LaunchScreen.storyboard */,
+				459E14AB214BAF5000F53B6B /* Models */,
 				45C38A4B2149544500664577 /* Info.plist */,
+				459E14AA214BAB6B00F53B6B /* Assets */,
+				459E14A9214BAB5D00F53B6B /* Template */,
+				459E14A7214BAB4800F53B6B /* ViewControllers */,
+				45C38A432149544300664577 /* Main.storyboard */,
+				45C38A482149544500664577 /* LaunchScreen.storyboard */,
 			);
 			path = "Low Battery Indicator";
 			sourceTree = "<group>";
@@ -125,6 +171,7 @@
 				45C38A4A2149544500664577 /* LaunchScreen.storyboard in Resources */,
 				45C38A472149544500664577 /* Assets.xcassets in Resources */,
 				45C38A452149544300664577 /* Main.storyboard in Resources */,
+				459E14AF214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C38A422149544300664577 /* ViewController.swift in Sources */,
+				45C38A422149544300664577 /* Intro.swift in Sources */,
+				459E14AD214BAF6900F53B6B /* RoundedButton.swift in Sources */,
 				45C38A402149544300664577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -283,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF6C9573GS;
 				INFOPLIST_FILE = "Low Battery Indicator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF6C9573GS;
 				INFOPLIST_FILE = "Low Battery Indicator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
