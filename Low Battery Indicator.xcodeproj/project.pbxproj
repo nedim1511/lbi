@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		459E14AD214BAF6900F53B6B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14AC214BAF6900F53B6B /* RoundedButton.swift */; };
 		459E14AF214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */; };
+		459E14B2214E941B00F53B6B /* AllowNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B1214E941B00F53B6B /* AllowNotificationsViewController.swift */; };
+		459E14B4214E94B700F53B6B /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B3214E94B700F53B6B /* Enumerations.swift */; };
 		45C38A402149544300664577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A3F2149544300664577 /* AppDelegate.swift */; };
 		45C38A422149544300664577 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A412149544300664577 /* Intro.swift */; };
 		45C38A452149544300664577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C38A432149544300664577 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		459E14AC214BAF6900F53B6B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		459E14B1214E941B00F53B6B /* AllowNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationsViewController.swift; sourceTree = "<group>"; };
+		459E14B3214E94B700F53B6B /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		45C38A3C2149544300664577 /* Low Battery Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Low Battery Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C38A3F2149544300664577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C38A412149544300664577 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				45C38A412149544300664577 /* Intro.swift */,
+				459E14B1214E941B00F53B6B /* AllowNotificationsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -51,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				45C38A3F2149544300664577 /* AppDelegate.swift */,
+				459E14B3214E94B700F53B6B /* Enumerations.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -183,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C38A422149544300664577 /* Intro.swift in Sources */,
+				459E14B2214E941B00F53B6B /* AllowNotificationsViewController.swift in Sources */,
 				459E14AD214BAF6900F53B6B /* RoundedButton.swift in Sources */,
+				459E14B4214E94B700F53B6B /* Enumerations.swift in Sources */,
 				45C38A402149544300664577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
