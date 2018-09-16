@@ -11,6 +11,8 @@
 		459E14AF214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */; };
 		459E14B2214E941B00F53B6B /* AllowNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B1214E941B00F53B6B /* AllowNotificationsViewController.swift */; };
 		459E14B4214E94B700F53B6B /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B3214E94B700F53B6B /* Enumerations.swift */; };
+		459E14B6214E96BE00F53B6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B5214E96BE00F53B6B /* Constants.swift */; };
+		459E14B8214E9A1E00F53B6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E14B7214E9A1E00F53B6B /* Extensions.swift */; };
 		45C38A402149544300664577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A3F2149544300664577 /* AppDelegate.swift */; };
 		45C38A422149544300664577 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C38A412149544300664577 /* Intro.swift */; };
 		45C38A452149544300664577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C38A432149544300664577 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		459E14AE214BAFB700F53B6B /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		459E14B1214E941B00F53B6B /* AllowNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationsViewController.swift; sourceTree = "<group>"; };
 		459E14B3214E94B700F53B6B /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		459E14B5214E96BE00F53B6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		459E14B7214E9A1E00F53B6B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		45C38A3C2149544300664577 /* Low Battery Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Low Battery Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C38A3F2149544300664577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C38A412149544300664577 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			children = (
 				45C38A3F2149544300664577 /* AppDelegate.swift */,
 				459E14B3214E94B700F53B6B /* Enumerations.swift */,
+				459E14B5214E96BE00F53B6B /* Constants.swift */,
+				459E14B7214E9A1E00F53B6B /* Extensions.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 				459E14AD214BAF6900F53B6B /* RoundedButton.swift in Sources */,
 				459E14B4214E94B700F53B6B /* Enumerations.swift in Sources */,
 				45C38A402149544300664577 /* AppDelegate.swift in Sources */,
+				459E14B6214E96BE00F53B6B /* Constants.swift in Sources */,
+				459E14B8214E9A1E00F53B6B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -339,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF6C9573GS;
 				INFOPLIST_FILE = "Low Battery Indicator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SF6C9573GS;
 				INFOPLIST_FILE = "Low Battery Indicator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

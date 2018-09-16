@@ -23,13 +23,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="3ZN-7S-gSO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="06K-c9-Wmd">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="06K-c9-Wmd">
                                 <rect key="frame" x="145" y="84" width="124" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="06K-c9-Wmd" secondAttribute="height" multiplier="1:1" id="71X-if-33L"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Battery Indicator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qWG-o9-OJJ">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Battery Indicator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qWG-o9-OJJ">
                                 <rect key="frame" x="62" y="385.33333333333331" width="290" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,9 +38,9 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B4H-0Y-gFX">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B4H-0Y-gFX">
                                 <rect key="frame" x="62" y="432.33333333333331" width="290" height="89.666666666666686"/>
-                                <string key="text">A lightweight application that notifies you when your iPad is about to turn off. Once started, it works in the background and sends notifications depending on your battery level.</string>
+                                <string key="text">A lightweight application that notifies you when your device is about to turn off. Once started, it works in the background and sends notifications depending on your battery level.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwW-WF-iEN" customClass="RoundedButton" customModule="Low_Battery_Indicator" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwW-WF-iEN" customClass="RoundedButton" customModule="Low_Battery_Indicator" customModuleProvider="target">
                                 <rect key="frame" x="62" y="538" width="290" height="50"/>
                                 <color key="backgroundColor" red="0.42352941179999998" green="0.33725490200000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -70,6 +70,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GGk-Qa-HcK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,7 +177,11 @@
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="vsf-bq-5Op" kind="show" identifier="fromIntroToAllowNotifications" id="Rta-Cf-YPa"/>
+                        <outlet property="appDescriptionLabel" destination="B4H-0Y-gFX" id="Hum-yf-FUS"/>
+                        <outlet property="appTitleUILabel" destination="qWG-o9-OJJ" id="6OY-Ev-9kQ"/>
+                        <outlet property="continueButton" destination="KwW-WF-iEN" id="IhP-fc-V1g"/>
+                        <outlet property="logoUIImage" destination="06K-c9-Wmd" id="VMg-oC-riB"/>
+                        <segue destination="vsf-bq-5Op" kind="show" identifier="fromIntroToAllowNotifications" animates="NO" id="Rta-Cf-YPa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -198,7 +205,7 @@
                                     <constraint firstAttribute="width" secondItem="2Lj-C4-8UG" secondAttribute="height" multiplier="1:1" id="LED-wN-8ge"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-70-S6K">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-70-S6K">
                                 <rect key="frame" x="62" y="385.33333333333331" width="290" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,7 +214,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to receive notification alerts, you need to allow this app to send notifications." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xYe-pK-O1i">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to receive notification alerts, you need to allow this app to send notifications." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xYe-pK-O1i">
                                 <rect key="frame" x="62" y="432.33333333333331" width="290" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,7 +223,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-yF-QDn" customClass="RoundedButton" customModule="Low_Battery_Indicator" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-yF-QDn" customClass="RoundedButton" customModule="Low_Battery_Indicator" customModuleProvider="target">
                                 <rect key="frame" x="62" y="502.33333333333326" width="290" height="50"/>
                                 <color key="backgroundColor" red="0.42352941179999998" green="0.33725490200000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -238,6 +245,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
+                                <connections>
+                                    <action selector="sureAllowUIButtonTapped:" destination="vsf-bq-5Op" eventType="touchUpInside" id="SIn-tu-GOF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -341,6 +351,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="allowNotificationsUILabel" destination="6IE-70-S6K" id="QdW-WY-qqI"/>
+                        <outlet property="descriptionLabel" destination="xYe-pK-O1i" id="cXz-v0-8Ec"/>
+                        <outlet property="sureAllowUIButton" destination="7Ue-yF-QDn" id="laq-jT-UvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gci-4k-aea" sceneMemberID="firstResponder"/>
             </objects>
